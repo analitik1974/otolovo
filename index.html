@@ -27,47 +27,47 @@
       height: 90px;
     }
 
-    /* fish1 плывёт справа налево (влево) */
+    /* fish1 — плывёт слева направо, смотрит влево (хвост вправо) */
     .fish1 {
       top: 10%;
-      right: -150px;
-      transform: scaleX(-1); /* отражение */
-      animation: swim-left 30s linear infinite;
+      left: 110%;
+      transform: scaleX(1); /* смотрит влево */
+      animation: swim-left 45s linear infinite;
       animation-delay: 0s;
     }
 
     .fish2 {
       top: 25%;
       left: -150px;
-      animation: swim-right 22s linear infinite;
+      animation: swim-right 40s linear infinite;
       animation-delay: 2s;
     }
 
     .fish3 {
       top: 40%;
       left: -150px;
-      animation: swim-right 28s linear infinite;
+      animation: swim-right 48s linear infinite;
       animation-delay: 4s;
     }
 
     .fish4 {
       top: 55%;
       left: -150px;
-      animation: swim-right 24s linear infinite;
+      animation: swim-right 44s linear infinite;
       animation-delay: 6s;
     }
 
     .fish5 {
       top: 70%;
       left: -150px;
-      animation: swim-right 20s linear infinite;
+      animation: swim-right 42s linear infinite;
       animation-delay: 8s;
     }
 
     .fish6 {
       top: 85%;
       left: -150px;
-      animation: swim-right 26s linear infinite;
+      animation: swim-right 50s linear infinite;
       animation-delay: 10s;
     }
 
@@ -77,8 +77,8 @@
     }
 
     @keyframes swim-left {
-      0% { right: -150px; transform: scaleX(-1); }
-      100% { right: 110%; transform: scaleX(-1); }
+      0% { left: 110%; transform: scaleX(-1); }
+      100% { left: -150px; transform: scaleX(-1); }
     }
   </style>
 </head>
