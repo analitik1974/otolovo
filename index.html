@@ -59,4 +59,40 @@
     .fish5 {
       top: 70%;
       left: -150px;
-      animation: swim-right 42s linear infinit
+      animation: swim-right 42s linear infinite;
+      animation-delay: 8s;
+    }
+
+    .fish6 {
+      top: 85%;
+      left: -150px;
+      animation: swim-right 50s linear infinite;
+      animation-delay: 10s;
+    }
+
+    @keyframes swim-right {
+      0% { left: -150px; transform: scaleX(1); }
+      100% { left: 110%; transform: scaleX(1); }
+    }
+
+    @keyframes swim-left {
+      0% { left: 110%; transform: scaleX(-1); }
+      100% { left: -150px; transform: scaleX(-1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Otolovo is Coming Soon</h1>
+  <p>We’re building a global platform to connect services, people and technology.</p>
+
+  <!-- Рыбки -->
+  <img src="fish1.png" class="fish fish1" alt="Fish 1">
+  <img src="fish2.png" class="fish fish2" alt="Fish 2">
+  <img src="fish3.png" class="fish fish3" alt="Fish 3">
+  <img src="fish4.png" class="fish fish4" alt="Fish 4">
+  <img src="fish5.png" class="fish fish5" alt="Fish 5">
+  <img src="fish6.png" class="fish fish6" alt="Fish 6">
+
+</body>
+</html>
