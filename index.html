@@ -11,30 +11,32 @@
       background: linear-gradient(to right, #e0f7fa, #80deea);
       overflow: hidden;
       height: 100vh;
+      position: relative;
     }
 
     h1, p {
       text-align: center;
       color: #004d40;
       margin-top: 20px;
+      z-index: 10;
+      position: relative;
     }
 
     .fish {
       position: absolute;
-      height: 100px;
-      animation: swim 20s linear infinite;
+      height: 90px;
+      animation: swim 18s linear infinite;
     }
 
-    /* Каждая рыбка плывёт на своей высоте и с разным таймингом */
     .fish1 { top: 10%; animation-delay: 0s; }
-    .fish2 { top: 25%; animation-delay: 5s; }
-    .fish3 { top: 40%; animation-delay: 10s; }
-    .fish4 { top: 55%; animation-delay: 15s; }
-    .fish5 { top: 70%; animation-delay: 2s; }
-    .fish6 { top: 85%; animation-delay: 7s; }
+    .fish2 { top: 25%; animation-delay: 3s; }
+    .fish3 { top: 40%; animation-delay: 6s; }
+    .fish4 { top: 55%; animation-delay: 9s; }
+    .fish5 { top: 70%; animation-delay: 12s; }
+    .fish6 { top: 85%; animation-delay: 15s; }
 
     @keyframes swim {
-      0% { left: -200px; transform: scaleX(1); }
+      0% { left: -150px; transform: scaleX(1); }
       100% { left: 110%; transform: scaleX(1); }
     }
   </style>
@@ -42,15 +44,15 @@
 <body>
 
   <h1>Otolovo is Coming Soon</h1>
-  <p>We're building a global platform to connect services, people and technology.</p>
+  <p>We’re building a global platform to connect services, people and technology.</p>
 
-  <!-- Шесть рыбок -->
+  <!-- Плавающие рыбки -->
   <img src="fish1.png" class="fish fish1" alt="Fish 1">
-  <img src="IMG_0611.JPG" class="fish fish2" alt="Fish 2">
-  <img src="IMG_0612.JPG" class="fish fish3" alt="Fish 3">
-  <img src="IMG_0613.JPG" class="fish fish4" alt="Fish 4">
-  <img src="IMG_0614.jpg" class="fish fish5" alt="Fish 5">
-  <img src="IMG_0615.jpg" class="fish fish6" alt="Fish 6">
+  <img src="fish2.png" class="fish fish2" alt="Fish 2">
+  <img src="fish3.png" class="fish fish3" alt="Fish 3">
+  <img src="fish4.png" class="fish fish4" alt="Fish 4">
+  <img src="fish5.png" class="fish fish5" alt="Fish 5">
+  <img src="fish6.png" class="fish fish6" alt="Fish 6">
 
 </body>
 </html>
