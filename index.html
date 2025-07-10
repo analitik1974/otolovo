@@ -5,19 +5,60 @@
   <title>Otolovo — Coming Soon</title>
   <style>
     body {
-      background-color: #f0f8ff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
     }
-    h1 { font-size: 3em; color: #0077cc; }
-    p { font-size: 1.2em; }
+
+    .fish {
+      font-size: 80px;
+      animation: swim 5s infinite linear;
+      position: absolute;
+      top: 40%;
+      left: -100px;
+    }
+
+    @keyframes swim {
+      0% { left: -100px; transform: scaleX(1); }
+      50% { transform: scaleX(1); }
+      100% { left: 110%; transform: scaleX(1); }
+    }
+
+    h1 {
+      color: #006064;
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    p {
+      color: #004d40;
+      font-size: 1.2em;
+      margin: 0.2em 0;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #004d40;
+    }
   </style>
 </head>
 <body>
-  <h1>🐟 Otolovo is Coming Soon!</h1>
-  <p>We’re building a global platform to connect services, people and technology.</p>
+
+  <div class="fish">🐟</div>
+
+  <h1>Otolovo is Coming Soon</h1>
+  <p>We're building a global platform to connect services, people and technology.</p>
   <p>Be among the first to join.</p>
-  <p>🌐 otolovo.com | otolovo.tech</p>
+
+  <footer>🌐 otolovo.com | otolovo.tech</footer>
 </body>
 </html>
