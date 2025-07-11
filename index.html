@@ -33,10 +33,7 @@
   animation: swim-reverse 50s linear infinite;
   animation-delay: 0s;
 }
-@keyframes swim-reverse {
-    from { right: -100px; }
-    to { right: 100%; }
-}
+
     
 
     .fish2 {
@@ -74,6 +71,11 @@
       animation-delay: 10s;
     }
 
+    @keyframes swim-reverse {
+    from { right: -100px; }
+    to { right: 100%; }
+    }
+    
     @keyframes swim-right {
       0% { left: -150px; transform: scaleX(1); }
       100% { left: 110%; transform: scaleX(1); }
