@@ -27,18 +27,19 @@
       height: 90px;
     }
 
-   .fish1 {
-   top: 10%;
-   left: -150px;
-   transform: scaleX(1); /* головой вперёд */
-   animation: swim-left 50s linear infinite;
-}
+    /* Рыбка 1 — плывёт влево головой вперёд */
+    .fish1 {
+      top: 10%;
+      left: 110%;
+      transform: scaleX(1); /* головой вперёд */
+      animation: swim-left 50s linear infinite;
+    }
 
-
-
+    /* Остальные рыбки — вправо */
     .fish2 {
       top: 25%;
       left: -150px;
+      transform: scaleX(1);
       animation: swim-right 40s linear infinite;
       animation-delay: 2s;
     }
@@ -46,6 +47,7 @@
     .fish3 {
       top: 40%;
       left: -150px;
+      transform: scaleX(1);
       animation: swim-right 48s linear infinite;
       animation-delay: 4s;
     }
@@ -53,6 +55,7 @@
     .fish4 {
       top: 55%;
       left: -150px;
+      transform: scaleX(1);
       animation: swim-right 44s linear infinite;
       animation-delay: 6s;
     }
@@ -60,6 +63,7 @@
     .fish5 {
       top: 70%;
       left: -150px;
+      transform: scaleX(1);
       animation: swim-right 42s linear infinite;
       animation-delay: 8s;
     }
@@ -67,23 +71,19 @@
     .fish6 {
       top: 85%;
       left: -150px;
+      transform: scaleX(1);
       animation: swim-right 50s linear infinite;
       animation-delay: 10s;
     }
 
-    @keyframes swim-reverse {
-    from { right: -100px; }
-    to { right: 100%; }
-    }
-    
     @keyframes swim-right {
       0% { left: -150px; transform: scaleX(1); }
       100% { left: 110%; transform: scaleX(1); }
     }
 
     @keyframes swim-left {
-      0% { left: 110%; transform: scaleX(-1); }
-      100% { left: -150px; transform: scaleX(-1); }
+      0% { left: 110%; transform: scaleX(1); }
+      100% { left: -150px; transform: scaleX(1); }
     }
   </style>
 </head>
