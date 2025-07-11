@@ -24,63 +24,58 @@
 
     .fish {
       position: absolute;
+      height: 90px;
     }
 
-    /* Рыбки слева направо */
+    /* Рыбка 1 — плывёт влево головой вперёд */
     .fish1 {
-      top: 12%;
-      left: -150px;
-      height: 80px;
-      transform: scaleX(1);
-      animation: swim-right 60s linear infinite;
+      top: 10%;
+      left: 110%;
+      transform: scaleX(1); /* головой вперёд */
+      animation: swim-left 50s linear infinite;
     }
 
+    /* Остальные рыбки — вправо */
     .fish2 {
-      top: 35%;
+      top: 25%;
       left: -150px;
-      height: 60px;
       transform: scaleX(1);
-      animation: swim-right 45s linear infinite;
-      animation-delay: 3s;
+      animation: swim-right 40s linear infinite;
+      animation-delay: 2s;
     }
 
     .fish3 {
-      top: 70%;
+      top: 40%;
       left: -150px;
-      height: 100px;
       transform: scaleX(1);
-      animation: swim-right 52s linear infinite;
-      animation-delay: 6s;
-    }
-
-    /* Рыбки справа налево */
-    .fish4 {
-      top: 20%;
-      left: 110%;
-      height: 70px;
-      transform: scaleX(1);
-      animation: swim-left 55s linear infinite;
-    }
-
-    .fish5 {
-      top: 50%;
-      left: 110%;
-      height: 90px;
-      transform: scaleX(1);
-      animation: swim-left 48s linear infinite;
+      animation: swim-right 48s linear infinite;
       animation-delay: 4s;
     }
 
-    .fish6 {
-      top: 80%;
-      left: 110%;
-      height: 65px;
+    .fish4 {
+      top: 55%;
+      left: -150px;
       transform: scaleX(1);
-      animation: swim-left 58s linear infinite;
-      animation-delay: 7s;
+      animation: swim-right 44s linear infinite;
+      animation-delay: 6s;
     }
 
-    /* Анимации */
+    .fish5 {
+      top: 70%;
+      left: -150px;
+      transform: scaleX(1);
+      animation: swim-right 42s linear infinite;
+      animation-delay: 8s;
+    }
+
+    .fish6 {
+      top: 85%;
+      left: -150px;
+      transform: scaleX(1);
+      animation: swim-right 50s linear infinite;
+      animation-delay: 10s;
+    }
+
     @keyframes swim-right {
       0% { left: -150px; transform: scaleX(1); }
       100% { left: 110%; transform: scaleX(1); }
