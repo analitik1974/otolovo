@@ -86,22 +86,50 @@
       100% { left: -150px; transform: scaleX(1); }
     }
     
-    
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: #004d40;
-  font-size: 14px;
-  font-weight: bold;
-  text-shadow: 0 0 6px rgba(128, 222, 234, 0.8); /* свечение морской волны */
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 10px 0;
-  z-index: 10;
-}
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: #004d40;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(128, 222, 234, 0.8); /* свечение морской волны */
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px 0;
+      z-index: 10;
+    }
 
-    
+    /* Стиль для формы */
+    .waiting-list-form {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .waiting-list-form input[type="email"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+      width: 300px;
+      border: 2px solid #004d40;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    .waiting-list-form button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #004d40;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .waiting-list-form button:hover {
+      background-color: #00796b;
+    }
   </style>
 </head>
 <body>
@@ -117,13 +145,19 @@
   <img src="fish5.png" class="fish fish5" alt="Fish 5">
   <img src="fish6.png" class="fish fish6" alt="Fish 6">
 
- 
-
+  <!-- Форма листа ожидания -->
+  <div class="waiting-list-form">
+    <h2>Be the first to know when we launch!</h2>
+    <form action="https://your-backend-server.com/submit-email" method="post">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Join Waiting List</button>
+    </form>
+  </div>
 
   <footer class="footer">
-  © Otolovo, 2025
-</footer>
-
+    <p>Contact us: <a href="mailto:support@otolovo.com" style="color: #004d40;">support@otolovo.com</a></p>
+    <p>© Otolovo, 2025</p>
+  </footer>
 
 </body>
 </html>
