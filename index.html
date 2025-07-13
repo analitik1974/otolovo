@@ -32,8 +32,8 @@
     .fish1 {
       top: 7%;
       left: 110%;
-      transform: scaleX(1); /* головой вперёд */
-      animation: swim-left 60s linear infinite;
+      transform: scaleX(1);
+      animation: swim-left 60s linear infinite, fish-bounce 3s ease-in-out infinite;
     }
 
     /* Остальные рыбки — вправо */
@@ -41,59 +41,52 @@
       top: 25%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 80s linear infinite;
-      animation-delay: 3s;
+      animation: swim-right 80s linear infinite 3s, fish-bounce 3s ease-in-out infinite;
     }
 
     .fish3 {
       top: 40%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 70s linear infinite;
-      animation-delay: 1s;
+      animation: swim-right 70s linear infinite 1s, fish-bounce 3s ease-in-out infinite;
     }
 
     .fish4 {
       top: 55%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 55s linear infinite;
-      animation-delay: 6s;
+      animation: swim-right 55s linear infinite 6s, fish-bounce 3s ease-in-out infinite;
     }
 
     .fish5 {
       top: 70%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 75s linear infinite;
-      animation-delay: 8s;
+      animation: swim-right 75s linear infinite 8s, fish-bounce 3s ease-in-out infinite;
     }
 
     .fish6 {
       top: 85%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 63s linear infinite;
-      animation-delay: 10s;
+      animation: swim-right 63s linear infinite 10s, fish-bounce 3s ease-in-out infinite;
     }
 
     @keyframes swim-right {
-      0% { left: -150px; transform: scaleX(1); }
-      100% { left: 110%; transform: scaleX(1); }
+      0% { left: -150px; }
+      100% { left: 110%; }
     }
 
     @keyframes swim-left {
-      0% { left: 110%; transform: scaleX(1); }
-      100% { left: -150px; transform: scaleX(1); }
+      0% { left: 110%; }
+      100% { left: -150px; }
     }
-    
-    @keyframes fish-bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-.fish { animation: fish-bounce 3s ease-in-out infinite; }
 
-    
+    @keyframes fish-bounce {
+      0%, 100% { transform: translateY(0) scaleX(1); }
+      50% { transform: translateY(-10px) scaleX(1); }
+    }
+
     .footer {
       position: fixed;
       bottom: 0;
@@ -102,13 +95,12 @@
       color: #004d40;
       font-size: 14px;
       font-weight: bold;
-      text-shadow: 0 0 6px rgba(128, 222, 234, 0.8); /* свечение морской волны */
+      text-shadow: 0 0 6px rgba(128, 222, 234, 0.8);
       background-color: rgba(255, 255, 255, 0.05);
       padding: 10px 0;
       z-index: 10;
     }
 
-    /* Стиль для формы */
     .waiting-list-form {
       text-align: center;
       margin-top: 30px;
@@ -164,7 +156,6 @@
 
   <footer class="footer">
     <p>Contact us: <a href="mailto:support@otolovo.com" style="color: #004d40;">support@otolovo.com</a></p>
-
     <p>© Otolovo, 2025</p>
   </footer>
 
