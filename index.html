@@ -87,6 +87,13 @@
       100% { left: -150px; transform: scaleX(1); }
     }
     
+    @keyframes fish-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.fish { animation: fish-bounce 3s ease-in-out infinite; }
+
+    
     .footer {
       position: fixed;
       bottom: 0;
