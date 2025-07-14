@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Otolovo — Coming Soon</title>
+
+  <!-- SEO и Open Graph -->
+  <meta name="description" content="Otolovo — global platform connecting services, people and technology. Join our early waitlist.">
+  <meta property="og:title" content="Otolovo — Coming Soon">
+  <meta property="og:description" content="Be among the first to join Otolovo — a global platform for services and tech.">
+  <meta property="og:image" content="https://otolovo.com/preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://otolovo.com">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
   <style>
     body {
       margin: 0;
@@ -15,12 +25,15 @@
       position: relative;
     }
 
+    main, section {
+      z-index: 10;
+      position: relative;
+    }
+
     h1, p {
       text-align: center;
       color: #004d40;
       margin-top: 20px;
-      z-index: 10;
-      position: relative;
     }
 
     .fish {
@@ -28,66 +41,25 @@
       height: 90px;
     }
 
-    
-    .fish1 {
-      top: 7%;
-      left: 110%;
-      transform: scaleX(1);
-      animation: swim-left 60s linear infinite;
-    }
-    .fish2 {
-      top: 25%;
-      left: -150px;
-      transform: scaleX(1);
-      animation: swim-right 80s linear infinite 3s;
-    }
-    .fish3 {
-      top: 40%;
-      left: -150px;
-      transform: scaleX(1);
-      animation: swim-right 70s linear infinite 1s;
-    }
-    .fish4 {
-      top: 55%;
-      left: -150px;
-      transform: scaleX(1);
-      animation: swim-right 55s linear infinite 6s;
-    }
-    .fish5 {
-      top: 70%;
-      left: -150px;
-      transform: scaleX(1);
-      animation: swim-right 75s linear infinite 8s;
-    }
-    .fish6 {
-      top: 85%;
-      left: -150px;
-      transform: scaleX(1);
-      animation: swim-right 63s linear infinite 10s;
-    }
+    .fish1 { top: 7%; left: 110%; transform: scaleX(1); animation: swim-left 60s linear infinite; }
+    .fish2 { top: 25%; left: -150px; transform: scaleX(1); animation: swim-right 80s linear infinite 3s; }
+    .fish3 { top: 40%; left: -150px; transform: scaleX(1); animation: swim-right 70s linear infinite 1s; }
+    .fish4 { top: 55%; left: -150px; transform: scaleX(1); animation: swim-right 55s linear infinite 6s; }
+    .fish5 { top: 70%; left: -150px; transform: scaleX(1); animation: swim-right 75s linear infinite 8s; }
+    .fish6 { top: 85%; left: -150px; transform: scaleX(1); animation: swim-right 63s linear infinite 10s; }
 
     @keyframes swim-right {
       0% { left: -150px; }
       100% { left: 110%; }
     }
+
     @keyframes swim-left {
       0% { left: 110%; }
       100% { left: -150px; }
     }
-    
 
-    .footer {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      color: #004d40;
-      font-size: 14px;
-      font-weight: bold;
-      text-shadow: 0 0 6px rgba(128, 222, 234, 0.8);
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 10px 0;
-      z-index: 10;
+    @media (max-width: 768px) {
+      .fish4, .fish5, .fish6 { display: none; }
     }
 
     .waiting-list-form {
@@ -100,6 +72,7 @@
       font-size: 16px;
       margin-right: 10px;
       width: 300px;
+      max-width: 80%;
       border: 2px solid #004d40;
       border-radius: 4px;
       outline: none;
@@ -119,34 +92,54 @@
     .waiting-list-form button:hover {
       background-color: #00796b;
     }
+
+    footer.footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      color: #004d40;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(128, 222, 234, 0.8);
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 10px 0;
+    }
+
+    footer.footer a {
+      color: #004d40;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Otolovo is Coming Soon</h1>
-  <p>We’re building a global platform to connect services, people and technology.</p>
+  <!-- Фоновая анимация рыб -->
+  <img src="fish1.png" class="fish fish1" alt="">
+  <img src="fish2.png" class="fish fish2" alt="">
+  <img src="fish3.png" class="fish fish3" alt="">
+  <img src="fish4.png" class="fish fish4" alt="">
+  <img src="fish5.png" class="fish fish5" alt="">
+  <img src="fish6.png" class="fish fish6" alt="">
 
-  <!-- Рыбки -->
-  <img src="fish1.png" class="fish fish1" alt="Fish 1">
-  <img src="fish2.png" class="fish fish2" alt="Fish 2">
-  <img src="fish3.png" class="fish fish3" alt="Fish 3">
-  <img src="fish4.png" class="fish fish4" alt="Fish 4">
-  <img src="fish5.png" class="fish fish5" alt="Fish 5">
-  <img src="fish6.png" class="fish fish6" alt="Fish 6">
+  <main>
+    <section class="hero">
+      <h1>Otolovo Coming Soon</h1>
+      <p>We’re building a global platform to connect services, people and technology.</p>
+    </section>
 
-  
-  <div class="waiting-list-form">
-  <h2>Be the first to know when we launch!</h2>
-  <form action="https://formsubmit.co/support@otolovo.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="email" name="email" placeholder="Enter your email" required>
-    <button type="submit">Join Waiting List</button>
-  </form>
-</div>
-
+    <section class="waiting-list-form">
+      <h2>Be the first to know when we launch!</h2>
+      <form action="https://formsubmit.co/support@otolovo.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://otolovo.com/thankyou.html">
+        <input type="email" name="email" placeholder="Enter your email" required autocomplete="email">
+        <button type="submit">Join Waiting List</button>
+      </form>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>Contact us: <a href="mailto:support@otolovo.com" style="color: #004d40;">support@otolovo.com</a></p>
+    <p>Contact us: <a href="mailto:support@otolovo.com">support@otolovo.com</a></p>
     <p>© Otolovo, 2025</p>
   </footer>
 
