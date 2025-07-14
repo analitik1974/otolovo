@@ -33,37 +33,37 @@
       top: 7%;
       left: 110%;
       transform: scaleX(1);
-      animation: swim-left 60s linear infinite, fish-bounce 3s ease-in-out infinite 0s;
+      animation: swim-left 60s linear infinite;
     }
     .fish2 {
       top: 25%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 80s linear infinite 3s, fish-bounce 3s ease-in-out infinite 0.7s;
+      animation: swim-right 80s linear infinite 3s;
     }
     .fish3 {
       top: 40%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 70s linear infinite 1s, fish-bounce 3s ease-in-out infinite 1.4s;
+      animation: swim-right 70s linear infinite 1s;
     }
     .fish4 {
       top: 55%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 55s linear infinite 6s, fish-bounce 3s ease-in-out infinite 2.1s;
+      animation: swim-right 55s linear infinite 6s;
     }
     .fish5 {
       top: 70%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 75s linear infinite 8s, fish-bounce 3s ease-in-out infinite 1.1s;
+      animation: swim-right 75s linear infinite 8s;
     }
     .fish6 {
       top: 85%;
       left: -150px;
       transform: scaleX(1);
-      animation: swim-right 63s linear infinite 10s, fish-bounce 3s ease-in-out infinite 2.8s;
+      animation: swim-right 63s linear infinite 10s;
     }
 
     @keyframes swim-right {
@@ -74,10 +74,7 @@
       0% { left: 110%; }
       100% { left: -150px; }
     }
-    @keyframes fish-bounce {
-      0%, 100% { transform: translateY(0) scaleX(1); }
-      50% { transform: translateY(-10px) scaleX(1); }
-    }
+    
 
     .footer {
       position: fixed;
