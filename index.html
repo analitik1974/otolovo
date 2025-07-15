@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Otolovo — Coming Soon</title>
+  <meta name="description" content="Otolovo is building a global platform to connect services, people, and technology. Join our waiting list to be the first to know when we launch!">
+  <meta name="keywords" content="Otolovo, coming soon, platform, technology, services, waiting list">
+  <meta name="author" content="Otolovo">
+  <meta name="theme-color" content="#80deea">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Otolovo — Coming Soon">
+  <meta property="og:description" content="We’re building a global platform to connect services, people and technology. Join our waiting list now!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://analitik1974.github.io/otolovo/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/analitik1974/otolovo/main/og-image.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Otolovo">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Otolovo — Coming Soon">
+  <meta name="twitter:description" content="Be among the first to know when Otolovo launches — a new global platform connecting services and technology.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/analitik1974/otolovo/main/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
   <style>
     body {
       margin: 0;
@@ -14,7 +38,6 @@
       height: 100vh;
       position: relative;
     }
-
     h1, p {
       text-align: center;
       color: #004d40;
@@ -22,13 +45,10 @@
       z-index: 10;
       position: relative;
     }
-
     .fish {
       position: absolute;
       height: 90px;
     }
-
-    
     .fish1 {
       top: 7%;
       left: 110%;
@@ -65,7 +85,6 @@
       transform: scaleX(1);
       animation: swim-right 63s linear infinite 10s;
     }
-
     @keyframes swim-right {
       0% { left: -150px; }
       100% { left: 110%; }
@@ -74,8 +93,6 @@
       0% { left: 110%; }
       100% { left: -150px; }
     }
-    
-
     .footer {
       position: fixed;
       bottom: 0;
@@ -89,12 +106,10 @@
       padding: 10px 0;
       z-index: 10;
     }
-
     .waiting-list-form {
       text-align: center;
       margin-top: 30px;
     }
-
     .waiting-list-form input[type="email"] {
       padding: 10px;
       font-size: 16px;
@@ -104,7 +119,6 @@
       border-radius: 4px;
       outline: none;
     }
-
     .waiting-list-form button {
       padding: 10px 20px;
       font-size: 16px;
@@ -115,7 +129,6 @@
       cursor: pointer;
       transition: background-color 0.3s;
     }
-
     .waiting-list-form button:hover {
       background-color: #00796b;
     }
@@ -126,7 +139,7 @@
   <h1>Otolovo is Coming Soon</h1>
   <p>We’re building a global platform to connect services, people and technology.</p>
 
-  <!-- Рыбки -->
+  <!-- Fish images -->
   <img src="fish1.png" class="fish fish1" alt="Fish 1">
   <img src="fish2.png" class="fish fish2" alt="Fish 2">
   <img src="fish3.png" class="fish fish3" alt="Fish 3">
@@ -134,21 +147,18 @@
   <img src="fish5.png" class="fish fish5" alt="Fish 5">
   <img src="fish6.png" class="fish fish6" alt="Fish 6">
 
-  
   <div class="waiting-list-form">
-  <h2>Be the first to know when we launch!</h2>
-  <form action="https://formsubmit.co/support@otolovo.com" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="email" name="email" placeholder="Enter your email" required>
-    <button type="submit">Join Waiting List</button>
-  </form>
-</div>
-
+    <h2>Be the first to know when we launch!</h2>
+    <form action="https://formsubmit.co/support@otolovo.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Join Waiting List</button>
+    </form>
+  </div>
 
   <footer class="footer">
     <p>Contact us: <a href="mailto:support@otolovo.com" style="color: #004d40;">support@otolovo.com</a></p>
     <p>© Otolovo, 2025</p>
   </footer>
-
 </body>
 </html>
